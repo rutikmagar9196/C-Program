@@ -1,0 +1,22 @@
+.a{
+	text-align: center;
+	font-size: 35px;
+	background-color: black;
+	color: orange;
+}
+.b{
+	
+	color: orange;
+	font-size: 25px;
+
+}
+.c{
+	background-color: black;
+	border-collapse: !important;
+	border-style: solid;
+	border-radius: 20px;
+	border-color: rgb(30, 40, 50);
+	border-width: 20%;
+	background-size: 20px;
+
+}

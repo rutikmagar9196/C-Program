@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<style type="text/css">
+		.a{
+			width: 35%;
+			background-color: black;
+			border-width: 6px;
+			font-size: 30px;
+			color: orange;
+		}
+		.b{
+			font-size: 40px;
+			text-align: center;
+			color: red;
+			border-radius: 40px;
+			background-color: black;
+		}
+
+		.c{
+			margin-left: 26px;
+		}
+		.d{
+			margin-left: 200px;
+		}
+		.e{
+			display: flex;
+			border-radius: 40px;
+
+		}
+		.f{
+			border-radius: 20px;
+			padding: 10px;
+			background-color: green;
+			color: white;
+		}
+		.g{
+			color: red;
+		}
+	</style>
+	<script type="text/javascript">
+		function add(){
+			let a,b,sum;
+			a=parseInt(document.getElementById("n1").value);
+			b=parseInt(document.getElementById("n2").value);
+			sum=a+b;
+			document.getElementById("res").value=sum;
+		}
+			function sub(){
+			let a,b,sum;
+			a=parseInt(document.getElementById("n1").value);
+			b=parseInt(document.getElementById("n2").value);
+			sum=a-b;
+			document.getElementById("res").value=sum;
+		}
+			function mul(){
+			let a,b,sum;
+			a=parseInt(document.getElementById("n1").value);
+			b=parseInt(document.getElementById("n2").value);
+			sum=a*b;
+			document.getElementById("res").value=sum;
+		}
+			function div(){
+			let a,b,sum;
+			a=parseInt(document.getElementById("n1").value);
+			b=parseInt(document.getElementById("n2").value);
+			sum=a/b;
+			document.getElementById("res").value=sum;
+		}
+	</script>
+</head>
+
+
+<body>
+
+<fieldset class="a">
+	
+	
+	<h1 class="b">
+	  <marquee direction="right" scrollamount="2300"> <u class="g">
+		   CALCULATOR
+	  </marquee> </u>
+	</h1>
+	<h4>
+		Enter First Number :- <input type="text" id="n1" name="n1" placeholder="Enter" class="c">
+	</h4>
+	<h4>
+		Enter Second Number :- <input type="text" id="n2" name="n2" placeholder="Enter">
+	</h4>
+	<h4>
+		Result :- <input type="text" name="res" id="res" placeholder="Answer" class="d">
+	</h4>
+	<h4>
+		<li class="e">
+			<ol><button class="f" onclick="add()" ><b><i>ADDITION</i></b></button></ol>
+			<ol><button class="f" onclick="sub()"><b><i>SUBTRACTION</i></b></button></ol>
+			<ol><button class="f" onclick="mul()"><b><i>MULTIPLICATION</i></b></button></ol>
+			<ol><button class="f" onclick="div()"><b><i>DIVISION</i></b></button></ol>
+		</li>
+		
+			
+		
+	</h4>
+</fieldset>
+</body>
+</html>
